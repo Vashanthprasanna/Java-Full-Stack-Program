@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Universal Selector */
+        *{
+            margin: 0;
+        }
+
+        /* Id Selector */
+        #heading{
+            color: red;
+            border: 1px dashed black;
+            text-align: center;
+            width: 300px;
+            margin: 10px;
+        }
+
+        /* Class Selector */
+        .caption{
+            margin: 15px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.596);
+            text-align: center;
+            width: 300px;
+            border: 1px dashed black;
+        }
+        
+        /* Tag Selector */
+        table tr th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        table{
+            margin: 15px;
+            border-collapse: collapse;
+            width: 300px;
+            border: 1px solid black;
+        }
+
+        th{
+            color:white;
+            background-color: rgba(0, 0, 0, 0.596);
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <h1 id="heading">My heading</h1>
+    <h1 class="caption">Employee Details</h1>
+    <table>
+        <tr>
+            <th>Eid</th>
+            <th>Ename</th>
+            <th>ESalary</th>
+        </tr>
+        <tr>
+            <td>101</td>
+            <td>Arun</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>102</td>
+            <td>Bala</td>
+            <td>2000</td>
+        </tr>
+        <tr>
+            <td>103</td>
+            <td>Chandru</td>
+            <td>3000</td>
+        </tr>
+    </table>
+
+</body>
+</html>

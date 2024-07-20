@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            border: 1px solid;
+            width: 450px;
+            position: absolute;
+            top: 100px;
+            left: 150px;
+            text-align: center;
+            padding: 40px 10px 40px 10px;
+            background-color: rgba(0, 0, 0, 0.596);
+            border-radius: 15px;
+        }
+
+        input{
+            margin: 10px 10px;
+        }
+        
+        #btn{
+            width: 110px;
+            height: 27px;
+            margin-top: 20px;
+            border-radius: 3px;
+            border: none;
+        }
+        #btn:hover{
+            background-color: rgba(238, 255, 0, 0.822);
+            cursor: pointer;
+        }
+
+        input{
+            width: 220px;
+            height: 20px;
+            border-radius: 2px;
+            border: none;
+            padding: 3px 10px;
+        }
+
+        h2{padding: 15px;}
+
+    </style>
+</head>
+<body>
+    <div>
+        <h2>Login</h2>
+        <form action="get">
+            <label for="username">UserName : </label>
+            <input type="text" id="username" placeholder="Name"><br>
+            <label for="password">Password : </label>
+            <input type="password" id="password" placeholder="Password"><br>
+            <button type="submit" id="btn">Login</button>
+        </form>
+    </div>
+</body>
+</html>

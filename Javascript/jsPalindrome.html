@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>
+        Enter the content : <input type="text" id="cont">
+    </h4>
+    <button onclick="Check()">Check</button>
+    <h3 id="res"></h3>
+    <script>
+        
+        function Check(){
+            var str1="",str2="",bool=false;
+            str1 = document.getElementById("cont").value;
+            for(i=str1.length-1;i>=0;i--){
+                str2 = str2 + str1.charAt(i); 
+            }
+            if(str1==str2) {bool=true};
+
+            document.getElementById("res").innerHTML = "Palindrome : "+bool;
+        }
+    </script>
+</body>
+</html>

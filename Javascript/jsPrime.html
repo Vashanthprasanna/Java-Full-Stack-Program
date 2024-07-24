@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Enter number : <input type="text" id="num" /></p>
+    <button onclick="Check()">Check</button>
+    <p id="res"></p>
+    <script>
+      function Check() {
+        var bool = true;
+        var num = parseInt(document.getElementById("num").value);
+        for (i = 2; i < num; i++) {
+          if (num % i == 0) {
+            bool = false;
+          }
+        }
+        if(bool) document.getElementById("res").innerHTML = "It is Prime Number ";
+        else document.getElementById("res").innerHTML = "It is Not Prime Number ";
+        
+      }
+    </script>
+  </body>
+</html>

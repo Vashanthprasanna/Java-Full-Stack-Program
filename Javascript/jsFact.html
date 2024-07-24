@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial using Arrow Function</title>
+  </head>
+  <body>
+    <h3>Enter a number : <input type="number" id="num" /></h3>
+    <button onclick="check()">Calculate</button>
+
+    <div id="demo"></div>
+    <script>
+      const check = () => {
+        var num = document.getElementById("num").value;
+        res = "<table width='60%' border='1' style='margin-top:20px;'>";
+        res += "<tr><th>Number</th><th>Factorial</th>";
+        if (num == 0)
+          document.getElementById("demo").innerHTML =
+            " It could not be a factorial";
+        else {
+          for (j = 1; j <= num; j++) {
+            var fact = 1;
+            for (i = 1; i <= j; i++) {
+              fact = fact * i;
+            }
+            res += document.getElementById("demo").innerHTML =
+              "<tr><td>" + j + "</td><td>" + fact + "</td></tr>";
+          }
+          res += "</table>";
+          document.getElementById("demo").innerHTML = res;
+        }
+      };
+    </script>
+  </body>
+</html>
